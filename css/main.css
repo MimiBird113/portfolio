@@ -1,0 +1,1056 @@
+/*! HTML5 Boilerplate v6.0.1 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/* Global Styles =========*/
+.about, .work, .contact, .footer, .full-width, .half-width {
+  width: 96%;
+  margin: 0 2%;
+}
+
+
+ body {
+   font-family: 'Josefin Sans', sans-serif;
+   font-weight: normal;
+   font-size: 16px;
+   width: 100%;
+ }
+
+ a {
+   text-decoration: none;
+   color: #75c059;
+ }
+
+ h1 {
+   font-family: 'Great Vibes', cursive;
+   font-size: 1.125em;
+   margin-left: 20px;
+   margin-top: 25px;
+   float: left;
+   margin-bottom: 0;
+ }
+
+
+ p {
+   font-size: 1em;
+ }
+
+ .img-responsive {
+   width: 100%;
+ }
+
+ .mobile-hide {
+   display: none;
+ }
+
+
+/* Heading ============= */
+
+
+.main-header {
+  width: 100%;
+  height: 350px;
+  background: url('../img/background-2.png') center center no-repeat;
+  background-size: cover;
+}
+
+
+.hero-area {
+  padding: 10px;
+  clear: both;
+}
+
+.hero-area h2 {
+  font-size: 1em;
+  text-align: center;
+  font-weight: normal;
+}
+
+.hero-area h3 {
+  margin-top: 15px;
+  font-size: .95em;
+  text-align: center;
+  font-weight: normal;
+}
+
+ /* navigation ====================== */
+ nav li, .nav-work li {
+   list-style-type: none;
+   display: inline-block;
+   text-decoration: none;
+ }
+
+  nav {
+    float: right;
+    padding-left: 10px !important;
+    padding-right: 20px;
+  }
+
+  nav li {
+    padding: 5px;
+    margin-top: 10px;
+  }
+
+  nav a, .nav-work a {
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: .65em;
+    padding: 0px;
+    color: black;
+  }
+
+  nav a:hover {
+    font-family: 'Great Vibes', cursive;
+    font-size: 1em;
+    position: relative;
+  }
+
+  nav:hover {
+    margin-top: 15px;
+    position: relative;
+  }
+
+
+ /* about section ================== */
+
+  .small-title {
+    font-size: 1.5em!important;
+    font-weight: 600!important;
+  }
+
+  .img-me {
+    padding-top: 35px;
+  }
+
+  .about p {
+    font-size: 1.125em!important;
+  }
+
+  .about h4 {
+    font-size: 1.5em!important;
+  }
+
+
+ /* work section =======================*/
+  .work {
+    font-size: 1.5em!important;
+    padding: 0 2%;
+  }
+
+
+
+ /* Lightbox */
+ .row > .column {
+   padding-top: 15px;
+
+ }
+
+ .lightbox-photos img {
+   width: 90%;
+   margin: 0 2%;
+ }
+
+ .demo-last {
+   margin: 15px 0 100px 0!important;
+   padding-left: 2%;
+ }
+
+ /* Create one column */
+.column {
+   width: 100%;
+   display: block;
+ }
+
+
+
+ /* Hide the slides by default */
+.lightbox {
+  display: none;
+}
+
+ /* contact section =============== */
+ .contact {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding-top: 30px;
+ }
+
+ .contact h4 {
+   padding: 5px;
+   border: 5px double #75c059;
+ }
+ /* footer ======================= */
+
+
+
+
+
+ /* Other Pages ========================== */
+ /* About Page ======================= */
+
+    .about-title {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2em;
+    }
+
+    #about-description h2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .skill-1, .skill-2, .skill-3 {
+        border: 1px solid black;
+        margin-top: 20px;
+        padding: 10px;
+    }
+
+    #my-skills i {
+      width: 10%;
+      padding: 2% 50%;
+
+    }
+
+    #my-skills p {
+      text-align: center;
+    }
+
+    #my-work h3 {
+      width: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 50px;
+      border-top: 1px solid #75c059;
+
+    }
+
+
+ /* Work Page ====================== */
+    .work-page {
+      background-color: whitesmoke;
+    }
+
+    #work-description {
+      margin-top: 50px;
+    }
+
+    #work-description, #description-2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #work-description p, #description-2 p {
+      font-size: 1.5em;
+    }
+
+    .nav-work li {
+      padding-right: 150px;
+      display: inline-block;
+      justify-content: space-between;
+    }
+
+    .nav-work {
+      margin-top: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .work-info p {
+      font-size: 1.25em;
+    }
+
+    .small-img {
+      max-width: 60%;
+    }
+
+    #development, #design, #writing, #misc {
+      width: 90%;
+      padding: 0 5%;
+      margin-bottom: 10px;
+    }
+
+    #development {
+
+    }
+
+
+
+
+
+
+ /* Contact Page ============================= */
+
+ .new-background {
+   background: url('../img/hero3.png');
+   background-size: cover!important;
+   background-repeat: no-repeat;
+   background-position: center center;
+   margin-left: 0px;
+   width: 100%;
+ }
+
+ .contact-info {
+   width: 96%;
+   margin: 0 2%;
+   padding-top: 15px;
+   padding-bottom: 70px;
+ }
+
+ .contact-info h2 {
+   font-size: 1em;
+ }
+
+.contact-info h3 {
+  font-size: .80em;
+  font-weight: 500;
+}
+ .contact-info i {
+   padding: 10px;
+   display: inline-block;
+ }
+
+ .contact-info a {
+   color: black;
+ }
+
+ .social-media {
+   margin-top: 50px;
+   padding-top: 150px;
+   padding-left: 5px;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    -webkit-clip-path: none;
+    clip-path: none;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+/* @media only screen and (min-width: 320px) {
+  nav {
+    padding-left: 40px;
+  }
+
+  iframe {
+    margin: 5%;
+  }
+
+
+
+
+}
+*/
+@media only screen and (max-width: 350px) {
+  /* Small Issues */
+
+  .title {
+    text-align: center;
+    font-size: 1.5em;
+  }
+
+  nav {
+    clear: both;
+    float: none;
+  }
+  nav ul {
+    padding: 0px;
+    margin-top: -25px;
+  }
+
+  .hero-area {
+    font-size: .85em;
+  }
+
+  p {
+    font-size: .75em;
+  }
+
+  h3, h4 {
+    font-size: .95em;
+  }
+
+  iframe {
+    margin-left: 10px;
+    max-width: 90%;
+  }
+
+  .contact-info i {
+    padding: 4px;
+    display: inline;
+  }
+
+
+}
+
+
+@media only screen and (min-width: 768px) {
+    /* Tablet Styles Here */
+    body {
+      overflow-x: hidden !important;
+    }
+
+    .full-width, .footer {
+       width: 96%;
+       margin: 0 2%;
+     }
+
+
+     .half-width {
+       width: 46%;
+       float: left;
+       margin: 0 2%;
+     }
+
+     .third-width {
+       width: 33.3%;
+       float: left;
+       margin: 0 auto;
+     }
+
+    .main-header {
+      height: 700px;
+      width: auto;
+      background-position: bottom center;
+    }
+
+    .mobile-hide {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    h1 {
+      font-size: 2em;
+      padding-top: 28px;
+    }
+
+    h4 {
+      font-size: 1.125em;
+      font-weight: 600;
+    }
+
+    nav {
+      float: right;
+      margin-right: 90px;
+      padding-top: 40px;
+      }
+    nav ul {
+      padding-left: 0px;
+      margin-bottom: 0px;
+      }
+    nav a, .nav-work a {
+      text-decoration: none;
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 1.25em;
+      padding-top: 15px;
+      color: black;
+      }
+
+    nav a:hover {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2em;
+      position: relative;
+      }
+
+    nav:hover {
+      padding-top: 28px;
+      position: relative;
+      }
+
+      .hero-area {
+        padding-top: 100px;
+      }
+      .hero-area h2 {
+        font-size: 1.75em
+      }
+
+      .hero-area h3 {
+        font-size: 1.5em;
+      }
+
+      p {
+        font-size: 1em;
+      }
+
+
+      .footer {
+        clear: both;
+      }
+
+
+    /*Header ===================== */
+
+    /* Lightbox */
+    .row > .column {
+      padding-top: 15px;
+    }
+
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Create four equal columns that floats next to eachother */
+    .column {
+      float: left;
+      width: 33%;
+    }
+
+    /* The Modal (background) */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      padding-top: 100px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: black;
+    }
+
+    /* Modal Content */
+    .modal-content {
+      position: relative;
+      background-color: #fefefe;
+      margin: auto;
+      padding: 0;
+      width: 90%;
+      max-width: 1200px;
+    }
+
+    /* The Close Button */
+    .close {
+      color: white;
+      position: absolute;
+      top: 10px;
+      right: 25px;
+      font-size: 35px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: #999;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    /* Hide the slides by default */
+    .mySlides {
+      display: none;
+    }
+
+    /* Next & previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -50px;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: black;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* Caption text */
+    .caption-container {
+      text-align: center;
+      background-color: black;
+      padding: 2px 16px;
+      color: white;
+    }
+
+    img.demo {
+      opacity: 0.6;
+    }
+
+    .demo {
+      max-width: 90%;
+      display: block;
+      padding: 10px;
+    }
+
+    .active,
+    .demo:hover {
+      opacity: 1;
+    }
+
+    img.hover-shadow {
+      transition: 0.3s
+    }
+
+    .hover-shadow:hover {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+    }
+
+/* about section ============= */
+.about .mobile-hide {
+  width: 90%;
+  height: auto;
+  display: inline-block;
+  padding-top: 40px;
+}
+
+.contact {
+  padding-left: 15px;
+}
+
+/* About page ================= */
+.about-img img {
+  width: 90%;
+  height: auto;
+  max-width: 600px;
+  max-height: 700px;
+  }
+
+  #about-description h2 {
+    padding-left: 10px;
+  }
+
+
+  /* Work Page ================ */
+  iframe {
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    margin: 0 30%;
+  }
+
+  /* Contact Page ===================== */
+
+  .new-background {
+    min-height: 1400px;
+    background-position: top;
+  }
+
+  .contact-info {
+    padding-top: 80px;
+    margin-bottom: 850px;
+  }
+
+  .contact-info h2 {
+      font-size: 1.5em;
+  }
+
+  .contact-info h3 {
+    font-size: 1.125em;
+    font-weight: 500;
+  }
+
+  .move {
+    margin-top: 45px;
+    float: left;
+  }
+
+  .social-media {
+    padding-top: 20px;
+  }
+
+  .social-media i {
+    display: inline;
+  }
+
+
+
+}
+
+@media only screen and (min-width: 940px) {
+  /* Desktop Styles Here */
+
+  h1 {
+    font-size: 3em;
+    padding-left: 2%;
+  }
+
+  nav {
+    padding-top: 55px;
+  }
+
+  nav a {
+    padding: 25px 25px;
+  }
+
+  nav:hover {
+    padding-top: 45px;
+  }
+
+  header {
+    margin-bottom: 20px;
+  }
+
+
+    /* About ================= */
+
+    .about p {
+      font-size: 1.125em;
+    }
+    .about h3, .about h4 {
+      font-size: 1.25em;
+      font-weight: 500;
+    }
+
+    /* Contact ================ */
+    .contact h4 {
+      font-size: 1.25em;
+      font-weight: 700;
+    }
+
+    /* About Page =================== */
+    h2 {
+      font-size: 2em;
+    }
+
+    p {
+      font-size: 1.125em;
+    }
+
+    #my-skills i {
+      font-size: 1.5em;
+    }
+
+    #my-work h3 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3em;
+    }
+
+    /* Work Page ======================== */
+    /* Contact Page ====================== */
+
+      .new-background {
+        background-position: bottom;
+      }
+
+      .contact-info {
+        padding-left: 30%;
+        font-size: 150%;
+      }
+
+
+
+  }
+
+
+
+
+
+
+
+  @media only screen and (min-width: 1200px) {
+    /* large screens ============ */
+
+    nav li a {
+      padding: 45px;
+    }
+
+    nav a {
+      font-size: 150%;
+    }
+    .contact-info {
+      padding-left: 45%;
+    }
+  }
+
+  @media print,
+     (-webkit-min-device-pixel-ratio: 1.25),
+     (min-resolution: 1.25dppx),
+     (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+  }
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

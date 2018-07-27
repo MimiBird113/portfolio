@@ -1,0 +1,257 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Michelle Robins Creative</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Dr+Sugiyama" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Mr+De+Haviland|Stalemate" rel="stylesheet">
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+
+
+    <body>
+        <header class="main-header clearfix">
+          <div class="top-header-wrapper">
+
+    <!---  <img src="img/mr-logo-2.png" alt="logo" class="img-small" id="the-box"> -->
+            <h1 class="title">Michelle Robins Creative</h1>
+    <!--        <p id="box-subtitle">Web Developer | UX/UI Designer | Writer</p> -->
+
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about/index.html">Skills</a></li>
+            <!--  <li><a href="work/index.html">Work</a></li> -->
+              <li><a href="contact/index.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+
+
+      <section class="hero-area">
+        <h2>Michelle Robins is a <br>freelance designer/writer/translator <br>based in Prague.</h2>
+        <h3>She is currently accepting new projects.</h3>
+      </section>
+    </header>
+
+    <section class="about clearfix">
+      <div class="half-width">
+        <h3 class="small-title">A Little Bit About Me</h3>
+        <p>I am a <strong>fantasy writer and responsive designer & developer</strong> who thrives on visual storytelling and the best user experience. When I'm not working, pursuing side projects or getting caught up in the allure of a new book, I can be found traveling, experimenting with food and searching for new stories.</p>
+        <p>After having moved abroad to start my career in who-knows-what, I decided it was time to stop guessing and instead launch something more meaningful. The journey to this discovery was a long one, in which I've worn many hats. I've been a tour guide, a graphic designer, a blogger, a translator, a teacher, a staff writer, and a bookshop keeper.</p>
+        <p>All this uncertainty means I learned a <em>lot</em> of things. I'd love to show you some of what I can do.</p>
+        <a href="about/index.html"><h4>Find out about some of the cool things I've learned how to do over the years --></h4></a>
+      </div>
+      <div class="half-width">
+        <figure class="mobile-hide">
+          <img src="img/me-2.jpg" alt="picture of me" class="img-responsive img-me">
+        </figure>
+      </div>
+    </section>
+
+    <section class="work">
+      <h3>Featured Work</h3>
+      <!-- Images used to open the lightbox -->
+      <div class="lightbox-photos">
+        <div class="row">
+          <div class="column">
+            <img src="img/wanderlust-header.png" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="wanderlust cafe header">
+          </div>
+          <div class="column">
+            <img src="img/one-wandering-muse-header.png" onclick="openModal();currentSlide(2)" class="hover-shadow" alt="one wandering muse header">
+          </div>
+          <div class="column">
+            <img src="img/roguepickings-small.png" onclick="openModal();currentSlide(3)" class="hover-shadow" alt="rogue pickings header">
+          </div>
+          <div class="column">
+            <img src="img/logo-1-small.png" onclick="openModal();currentSlide(4)" class="hover-shadow" alt="bluebird design logo">
+          </div>
+          <div class="column">
+            <img src="img/jubileeausten-small.png" onclick="openModal();currentSlide(5)" class="hover-shadow" alt="jubilee austen header">
+          </div>
+          <div class="column">
+            <img src="img/oasis-logo-small.png" onclick="openModal();currentSlide(6)" class="hover-shadow" alt="oasis cafe header">
+          </div>
+        </div>
+        <div class="row">
+
+          <div class="column">
+            <img src="img/unplugged-small.png" onclick="openModal();currentSlide(7)" class="hover-shadow" alt="unplugged logo">
+          </div>
+
+          <div class="column">
+            <img src="img/facebook-header-3-oasis-small.png" onclick="openModal();currentSlide(8)" class="hover-shadow" alt="social media header">
+          </div>
+
+
+          <div class="column">
+            <img src="img/8-ball-small.png" onclick="openModal();currentSlide(9)" class="hover-shadow" alt="javascript project">
+          </div>
+
+        </div>
+      </div>
+
+      <!-- The Modal/Lightbox -->
+      <div class="lightbox mobile-hide">
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+          <div class="mySlides">
+            <div class="numbertext">1 / 9</div>
+          <a href="https://mimibird113.github.io/wanderlust-bookstore-cafe/" target="_blank"><img src="img/wanderlust-2.png" style="width:100%" alt="wanderlust cafe mockup"></a>
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">2 / 9</div>
+          <a href="https://www.onewanderingmuse.com/" target="_blank"><img src="img/one-wandering-muse.png" style="width:100%" alt="wordpress custom theme"></a>
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">3 / 9</div>
+            <a href="https://mimibird113.github.io/rogue-pickings/" target="_blank"><img src="img/roguepickings-large.png" style="width:100%" alt="rogue pickings mockup"></a>
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">4 / 9</div>
+            <img src="img/logo-1.png" style="width:100%" alt="logo design">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">5 / 9</div>
+            <a href="https://mimibird113.github.io/jubilee-austen/" target="_blank"><img src="img/jubileeausten-large.png" style="width:100%" alt="portfolio site mockup"></a>
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">6 / 9</div>
+            <img src="img/oasis-landing-page-final-final.png" style="width:100%" alt="landing page">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">7 / 9</div>
+          <a href="https://mimibird113.github.io/unplugged/" target="_blank">  <img src="img/unplugged-mobile-phone.png" style="width:40%; padding: 0 30%;" alt="responsive design"></a>
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">8 / 9</div>
+            <img src="img/facebook-header-3-oasis.png" style="width:100%" alt="portfolio site mockup">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">9 / 9</div>
+          <a href="https://mimibird113.github.io/magic-8-ball/" target="_blank">  <img src="img/magic-8-ball.png" style="width:100%" alt="portfolio site mockup"></a>
+          </div>
+
+        </div>
+
+          <!-- Next/previous controls -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          <!-- Caption text -->
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+
+          <!-- Thumbnail image controls -->
+          <div class="column">
+            <img class="demo" src="img/wanderlust-header.png" onclick="currentSlide(1)" alt="Website Mockups">
+          </div>
+
+          <div class="column">
+            <img class="demo" src="img/one-wandering-muse-header.png" onclick="currentSlide(2)" alt="WordPress Custom Themes">
+          </div>
+
+          <div class="column">
+            <img class="demo" src="img/roguepickings-small.png" onclick="currentSlide(3)" alt="Website Design">
+          </div>
+
+          <div class="column">
+            <img class="demo" src="img/logo-1-small.png" onclick="currentSlide(4)" alt="Logo Creation">
+          </div>
+
+          <div class="column">
+            <img class="demo" src="img/jubileeausten-small.png" onclick="currentSlide(5)" alt="Website Design">
+          </div>
+
+          <div class="column">
+            <img class="demo" src="img/oasis-logo-small.png" onclick="currentSlide(6)" alt="Landing Page Design">
+          </div>
+
+          <div class="column">
+            <img class="demo" src="img/unplugged-small.png" onclick="currentSlide(7)" alt="Responsive Design">
+          </div>
+
+          <div class="column">
+            <img class="demo" src="img/facebook-header-3-oasis-small.png"  onclick="currentSlide(8)" alt="Social Media Header">
+          </div>
+
+          <div class="column">
+            <img class="demo-last" src="img/8-ball-small.png" onclick="currentSlide(9)" alt="JavaScript projects">
+          </div>
+        </div>
+      </div>
+      </section>
+
+  <section class="btn contact">
+  <a href="contact/index.html"><h4>Want to work together? Let's go --></h4></a>
+  </section>
+
+
+
+    <section class="footer">
+    <p>  &copy; Michelle Robins Creative 2018 </p>
+    </section>
+
+    </body>
+</html>
+
+<script>
+// Open the Modal
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+// Close the Modal
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+var slideIndex = 1;
+showSlides(slideIndex);
+// Handle ESC key (key code 27)
+document.addEventListener('keyup', function(e) {
+    if (e.keyCode == 27) {
+        closeModal();
+    }
+});
+var modal = document.querySelector('#openModal');
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
